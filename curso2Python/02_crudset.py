@@ -23,4 +23,9 @@ print(setCountries)
 # Otra forma de eliminar .discard("nombre del elemento a elimiar"), 
 # en el caso de no existir el elemento a eliminar no pasa nada, nisiquiera enviar un error:
 setCountries.discard("chile")
-print(setCountries)#no encuentra el elemento pero aún así lo imprime sin generar un error
+print(setCountries)
+
+# limpiar todo el conjunto metodo .clear():
+setCountries.clear()
+print(setCountries)
+
