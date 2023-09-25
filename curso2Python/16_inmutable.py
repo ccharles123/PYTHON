@@ -13,11 +13,13 @@ items = [
     }
 ]
 
-# Vamos a enfocarnos en no modificar eñ array original:
+# Vamos a enfocarnos en no modificar el array original (items):
 
 def addTaxes(item):
-    item["taxes"] = item["price"] * .15 
-    return item
+    #generamos una copia del array original y a ese le realizamos la modificacion:
+    newArray = item.copy()
+    newArray["taxes"] = newArray["price"] * .15 
+    return newArray
 
 newItems = list(map(addTaxes, items))
 print("New List")

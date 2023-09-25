@@ -20,3 +20,14 @@ print(numbersB) #[5, 6, 7]
 
 result = list(map(lambda x, y: x + y, numbersA, numbersB))
 print(result) #[6, 8, 10]
+
+#Ejercicio:
+
+def multiply_numbers(numbers):
+    # Escribe tu solución 👇
+    numbers2 = list(map(lambda i : i * 2, numbers))
+    return numbers2
+
+numbers = [1, 2, 3, 4]
+response = multiply_numbers(numbers)
+print(response)
