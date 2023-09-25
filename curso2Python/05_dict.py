@@ -1,4 +1,4 @@
-#crear una dict con un rango iterable de 10 elementos:
+#crear una dict con un rango iterable de 5 elementos:
 numbers = {}
 for i in range(1, 5):
     numbers[i] = i * 2
@@ -18,7 +18,7 @@ for country in countries:
 print(populations)
 
 # otra forma de hacerlo con la syntaxis:
-populations2 = {country: random.randint(1, 100) for country in populations}
+populations2 = {country: random.randint(1, 100) for country in countries}
 print(populations2)
 
 # generar el dict a partir de dos listas:
