@@ -11,14 +11,14 @@ def generateBarChart(country, labels, values):
 #generemos un grafico de torta:
 def generatePieChart(continent, labels, values):
     fig, ax =plt.subplots()
-    ax.pie(values,labels = labels)
+    ax.pie(values, labels = labels)
     ax.axis("equal")
     plt.savefig(f"./imgs/continent/{continent}.png") #guarda la grafica como pie.png en nuestro proyecto.
     plt.close
     
 #para ejecuatar con un script en nuestro terminal y se envian los valores a la funcion generateBarChart:
 if __name__ == "__main__":
-    labels = ["Mariana", "Edimer", "Carlos"]
+    labels = ["Mariana", "Edimer", "Betty"]
     values = [10, 33, 38]
     #generateBarChart(labels, values)
     generatePieChart(labels, values)

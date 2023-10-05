@@ -1,0 +1,10 @@
+#desde aqui corremos nuestro contenedor:
+
+#primero definimos una etiqueta llamada servicios:
+services:
+  app-csv:
+    build: #le estamos diciendo que va ha construir este servicio.
+      context: . #desde la carpeta que estoy ubicado.
+      dockerfile: Dockerfile #y vas a buscar el archivo Dockerlie.
+    volumes:
+      - .:/app #esto sirve para enlazar el docker con el codigo y se vean los cambios inmediatamente
